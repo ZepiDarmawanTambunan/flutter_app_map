@@ -113,7 +113,7 @@ class LocationViewModel with ChangeNotifier {
     }
   }
 
-  void resetLocationViewMolde(){
+  void resetLocationViewModel(){
     _positions = [];
     _markers = {};
     _polylines = {};

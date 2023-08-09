@@ -50,10 +50,13 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void dispose() {
     // TODO: implement dispose
+    final locationViewModel = Provider.of<LocationViewModel>(context, listen: false);
+    locationViewModel.resetLocationViewModel();
+    stopLocationStream();
+    locationViewModel.getCurrentPosition();
     _mapController.future.then((controller) {
       controller.dispose();
     });
-    _positionStreamSubscription?.cancel();
     super.dispose();
   }
 
@@ -82,16 +85,16 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     Text(value.initialCameraPosition.latitude.toString()),
                     SizedBox(width: 8,),
-                    Text(value.initialCameraPosition.latitude.toString()),
+                    Text(value.initialCameraPosition.longitude.toString()),
                   ],
                 ),
                 SizedBox(height: 10,),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text("Jarak Tujuan: ${value.infoDestincation['distance']}"),
+                    Text("Jarak Tujuan: ${(value.infoDestincation['distance'] as num).toStringAsFixed(2)} Meter"),
                     SizedBox(width: 8,),
-                    Text("Duration Tujuan: ${value.infoDestincation['duration']}"),
+                    Text("Duration Tujuan: ${(value.infoDestincation['duration'] / 60  as num).toStringAsFixed(2)} Menit"),
                   ],
                 ),
                 SizedBox(height: 10,),
@@ -155,7 +158,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             FloatingActionButton(
               onPressed: (){
-                locationViewModel.resetLocationViewMolde();
+                locationViewModel.resetLocationViewModel();
                 stopLocationStream();
                 locationViewModel.getCurrentPosition();
               },
