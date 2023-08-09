@@ -1,17 +1,17 @@
 Gambar 1:
-![Screenshot_1691593539](https://github.com/ZepiDarmawanTambunan/flutter_app_map/assets/58543758/66d61bab-b064-40ea-88ec-3709c314d0eb)
+<img width="195" alt="Screenshot_1691593539" src="https://github.com/ZepiDarmawanTambunan/flutter_app_map/assets/58543758/6b2f81b2-cb7f-4db3-9e75-edeefbd9315d">
 <br/>
 
 Gambar 2:
-![Screenshot_1691593552](https://github.com/ZepiDarmawanTambunan/flutter_app_map/assets/58543758/d545c099-6b19-4812-943a-e79057b1d750)
+<img width="216" alt="Screenshot_1691593552" src="https://github.com/ZepiDarmawanTambunan/flutter_app_map/assets/58543758/2da09ab7-5301-4327-8969-70850306dca6">
 <br/>
 
 Gambar 3:
-![Screenshot_1691593557](https://github.com/ZepiDarmawanTambunan/flutter_app_map/assets/58543758/feb84776-1059-4607-bb4d-8f206ff8a147)
+<img width="216" alt="Screenshot_1691593557" src="https://github.com/ZepiDarmawanTambunan/flutter_app_map/assets/58543758/1a96064e-d9ef-4189-877a-8bd35bc6ba24">
 <br/>
 
 Gambar 4:
-![Screenshot_1691593749](https://github.com/ZepiDarmawanTambunan/flutter_app_map/assets/58543758/6c097c3d-898e-435c-b584-a43db69fbe51)
+<img width="216" alt="Screenshot_1691593749" src="https://github.com/ZepiDarmawanTambunan/flutter_app_map/assets/58543758/4dc1ce7c-fabb-4e36-b0ff-e2797b2fbf7f">
 <br/>
 
 Gambar 5:
